@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExampleApp.PageTypes.UITabPage4"
+             Title="Página 4"
+             Icon="d.png"
+             BackgroundColor="Green">
+  <ContentPage.Content>
+    <Label Text="Página 4" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+  </ContentPage.Content>
+</ContentPage>

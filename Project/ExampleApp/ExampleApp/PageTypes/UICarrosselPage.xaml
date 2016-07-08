@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExampleApp.PageTypes.UICarrosselPage"
+            xmlns:me="clr-namespace:ExampleApp.PageTypes;assembly:ExampleApp">
+  <CarouselPage.Children>
+    <ContentPage BackgroundColor="Aqua" Title="Pagina 1">
+      <ContentPage.Content>
+        <Label Text="Página 1" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+      </ContentPage.Content>
+    </ContentPage>
+    <ContentPage BackgroundColor="Red" Title="Pagina 2">
+      <ContentPage.Content>
+        <Label Text="Página 2" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+      </ContentPage.Content>
+    </ContentPage>
+    <ContentPage BackgroundColor="Blue" Title="Pagina 3">
+      <ContentPage.Content>
+        <Label Text="Página 3" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+      </ContentPage.Content>
+    </ContentPage>
+    <me:UITabPage4 />
+  </CarouselPage.Children>
+</CarouselPage>

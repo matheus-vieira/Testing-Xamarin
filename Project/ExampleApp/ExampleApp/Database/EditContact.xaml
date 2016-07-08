@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExampleApp.Database.EditContact"
+             Title="Novo">
+  <ContentPage.Content>
+    <StackLayout Spacing="20" Padding="20">
+      <Entry x:Name="Nome" Placeholder="Nome"></Entry>
+      <Entry x:Name="Email" Placeholder="Email" Keyboard="Email"></Entry>
+      <Entry x:Name="Telefone" Placeholder="Telefone" Keyboard="Telephone"></Entry>
+
+      <StackLayout Orientation="Horizontal" Spacing="20" Padding="20">
+        <Button x:Name="Salvar" Text="Salvar" Clicked="SalvarClicked"></Button>
+        <Button x:Name="Deletar" Text="Deletar" Clicked="DeletarClicked" IsVisible="False"></Button>
+      </StackLayout>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

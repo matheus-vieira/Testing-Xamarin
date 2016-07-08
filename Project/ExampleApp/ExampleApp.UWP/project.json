@@ -1,0 +1,25 @@
+﻿{
+  "dependencies": {
+    "Microsoft.Bcl": "1.1.10",
+    "Microsoft.Bcl.Build": "1.0.21",
+    "Microsoft.Net.Http": "2.2.29",
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
+    "sqlite-net-pcl": "1.1.2",
+    "SQLite.Net-PCL": "3.1.1",
+    "SQLite.Net.Core-PCL": "3.1.1",
+    "SQLitePCL.bundle_green": "0.9.2",
+    "SQLitePCL.raw": "0.9.2",
+    "Xamarin.Forms": "2.3.0.107"
+  },
+  "frameworks": {
+    "uap10.0": {}
+  },
+  "runtimes": {
+    "win10-arm": {},
+    "win10-arm-aot": {},
+    "win10-x86": {},
+    "win10-x86-aot": {},
+    "win10-x64": {},
+    "win10-x64-aot": {}
+  }
+}

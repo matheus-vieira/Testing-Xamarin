@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExampleApp.PageTypes.UITabbedPage"
+            xmlns:ui="clr-namespace:ExampleApp.Database;assembly:ExampleApp"
+            xmlns:me="clr-namespace:ExampleApp.PageTypes;assembly:ExampleApp">
+  <TabbedPage.Children>
+    <ContentPage BackgroundColor="Aqua" Title="Pagina 1" Icon="a.png">
+      <ContentPage.Content>
+        <Button Text="Salvar" Clicked="OnClicked"></Button>
+      </ContentPage.Content>
+    </ContentPage>
+    <ui:MyPage />
+    <ContentPage BackgroundColor="Blue" Title="Pagina 3" Icon="c.png">
+      <ContentPage.Content>
+        <Label Text="Página 3" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+      </ContentPage.Content>
+    </ContentPage>
+    <ContentPage BackgroundColor="Aqua" Title="Pagina 1" Icon="a.png">
+      <ContentPage.Content>
+        <Label Text="Página 1" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+      </ContentPage.Content>
+    </ContentPage>
+    <ContentPage BackgroundColor="Red" Title="Pagina 2" Icon="b.png">
+      <ContentPage.Content>
+        <Label Text="Página 2" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+      </ContentPage.Content>
+    </ContentPage>
+    <ContentPage BackgroundColor="Blue" Title="Pagina 3" Icon="c.png">
+      <ContentPage.Content>
+        <Label Text="Página 3" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+      </ContentPage.Content>
+    </ContentPage>
+    <me:UITabPage4 />
+    <ContentPage BackgroundColor="Aqua" Title="Pagina 1" Icon="a.png">
+      <ContentPage.Content>
+        <Label Text="Página 1" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+      </ContentPage.Content>
+    </ContentPage>
+    <ContentPage BackgroundColor="Red" Title="Pagina 2" Icon="b.png">
+      <ContentPage.Content>
+        <Label Text="Página 2" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+      </ContentPage.Content>
+    </ContentPage>
+    <ContentPage BackgroundColor="Blue" Title="Pagina 3" Icon="c.png">
+      <ContentPage.Content>
+        <Label Text="Página 3" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+      </ContentPage.Content>
+    </ContentPage>
+    <ContentPage BackgroundColor="Aqua" Title="Pagina 1" Icon="a.png">
+      <ContentPage.Content>
+        <Label Text="Página 1" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+      </ContentPage.Content>
+    </ContentPage>
+    <ContentPage BackgroundColor="Red" Title="Pagina 2" Icon="b.png">
+      <ContentPage.Content>
+        <Label Text="Página 2" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+      </ContentPage.Content>
+    </ContentPage>
+    <ContentPage BackgroundColor="Blue" Title="Pagina 3" Icon="c.png">
+      <ContentPage.Content>
+        <Label Text="Página 3" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+      </ContentPage.Content>
+    </ContentPage>
+    <me:UITabPage4 />
+  </TabbedPage.Children>
+</TabbedPage>

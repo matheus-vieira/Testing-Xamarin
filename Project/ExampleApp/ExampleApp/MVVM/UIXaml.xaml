@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExampleApp.UIXaml">
+  <ContentPage.Content>
+    <StackLayout Padding="20" Spacing="20">
+      <Entry Placeholder="github user" TextColor="Aqua" Text="{Binding User}"></Entry>
+      <Button Text="Search" TextColor="White" BackgroundColor="Aqua" Command="{Binding Clicked}"></Button>
+      <ListView ItemsSource="{Binding Items}"></ListView>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
