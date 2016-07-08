@@ -1,2 +1,2 @@
-# Testting-Xamarin
+# Testing-Xamarin
 Several tests with Xamarin.Forms
