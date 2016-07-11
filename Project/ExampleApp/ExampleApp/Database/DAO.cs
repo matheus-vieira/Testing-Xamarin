@@ -21,6 +21,17 @@ namespace ExampleApp.Database
             _conn.CreateTable<Contato>();
         }
 
+        public void Save(Contato contato)
+        {
+            if (contato.Id > 0)
+            {
+                Update(contato);
+            } else
+            {
+                Insert(contato);
+            }
+        }
+
         public void Insert(Contato contato)
         {
             _conn.Insert(contato);
@@ -43,7 +54,7 @@ namespace ExampleApp.Database
 
         public List<Contato> Get()
         {
-            return _conn.Table<Contato>().OrderBy(c => c.Nome).ToList();
+            return _conn.Table<Contato>().OrderBy(c => c.Nome.ToLower()).ToList();
         }
 
         public void Dispose()
