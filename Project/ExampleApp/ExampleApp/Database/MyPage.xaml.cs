@@ -27,7 +27,7 @@ namespace ExampleApp.Database
 
         protected async void NovoClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new EditContact());
+            await Navigation.PushAsync(new EditContact(null));
         }
 
         protected async void ListItemTapped(object sender, ItemTappedEventArgs e)

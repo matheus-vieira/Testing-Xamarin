@@ -9,9 +9,9 @@
       <Entry x:Name="Email" Placeholder="Email" Keyboard="Email"></Entry>
       <Entry x:Name="Telefone" Placeholder="Telefone" Keyboard="Telephone"></Entry>
 
-      <StackLayout Orientation="Horizontal" Spacing="20" Padding="20">
-        <Button x:Name="Salvar" Text="Salvar" Clicked="SalvarClicked"></Button>
-        <Button x:Name="Deletar" Text="Deletar" Clicked="DeletarClicked" IsVisible="False"></Button>
+      <StackLayout Orientation="Horizontal">
+        <Button x:Name="Salvar" Text="Salvar" Clicked="SalvarClicked" HorizontalOptions="FillAndExpand"></Button>
+        <Button x:Name="Deletar" Text="Deletar" Clicked="DeletarClicked" IsVisible="False" HorizontalOptions="FillAndExpand"></Button>
       </StackLayout>
     </StackLayout>
   </ContentPage.Content>

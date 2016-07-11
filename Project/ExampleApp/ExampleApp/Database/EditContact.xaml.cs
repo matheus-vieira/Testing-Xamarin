@@ -12,22 +12,15 @@ namespace ExampleApp.Database
     {
         private Contato _contato;
         public EditContact(Contato contato)
-            : base()
         {
             InitializeComponent();
 
-            _contato = contato;
-            Title = "Manter";
-            Deletar.IsVisible = true;
+            _contato = contato ?? new Contato();
+
+            Title = contato != null ? "Manter" : "Novo";
+            Deletar.IsVisible = contato != null;
 
             SetDados();
-        }
-
-        public EditContact()
-        {
-            InitializeComponent();
-
-            _contato = new Contato();
         }
 
         protected void DeletarClicked(object sender, EventArgs e)
@@ -47,16 +40,9 @@ namespace ExampleApp.Database
                 _contato.Nome = Nome.Text;
                 _contato.Email = Email.Text;
                 _contato.Telefone = Telefone.Text;
+                _contato.Id = int.Parse(Salvar.CommandParameter.ToString());
 
-                if (Salvar.CommandParameter == null)
-                {
-                    dados.Insert(_contato);
-                }
-                else
-                {
-                    _contato.Id = int.Parse(Salvar.CommandParameter.ToString());
-                    dados.Update(_contato);
-                }
+                dados.Save(_contato);
 
                 Navigation.PopAsync();
             }

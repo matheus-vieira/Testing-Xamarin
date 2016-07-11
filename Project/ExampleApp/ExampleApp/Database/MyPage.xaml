@@ -4,9 +4,9 @@
              x:Class="ExampleApp.Database.MyPage"
              Title="Contatos">
   <ContentPage.Content>
-    <StackLayout>
+    <StackLayout Spacing="20" Padding="20">
       <Button x:Name="Novo" Text="Novo" Clicked="NovoClicked"></Button>
-      <ListView x:Name="List" ItemTapped="ListItemTapped"></ListView>
+      <ListView x:Name="List" ItemTapped="ListItemTapped"  />
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>
