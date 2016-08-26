@@ -146,6 +146,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="ModernHttpClient, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\modernhttpclient.2.4.2\lib\Portable-Net45+WinRT45+WP8+WPA81\ModernHttpClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="SQLite-net, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\sqlite-net-pcl.1.1.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
       <Private>True</Private>
@@ -206,10 +210,10 @@
     <SDKReference Include="Microsoft.VCLibs, Version=12.0">
       <Name>Microsoft Visual C++ 2013 Runtime Package for Windows</Name>
     </SDKReference>
-    <SDKReference Include="SQLite.WinRT, Version=3.13.0">
-      <Name>SQLite for Windows Runtime %28SQLite.WinRT, Version=3.13.0%29</Name>
+    <SDKReference Include="SQLite.WinRT, Version=3.14.1">
+      <Name>SQLite for Windows Runtime</Name>
     </SDKReference>
-    <SDKReference Include="SQLite.WinRT81, Version=3.13.0">
+    <SDKReference Include="SQLite.WinRT81, Version=3.14.1">
       <Name>SQLite for Windows Runtime %28Windows 8.1%29</Name>
     </SDKReference>
   </ItemGroup>

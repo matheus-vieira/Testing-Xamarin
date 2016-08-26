@@ -4,8 +4,9 @@
              x:Class="ExampleApp.UIXaml">
   <ContentPage.Content>
     <StackLayout Padding="20" Spacing="20">
-      <Entry Placeholder="github user" TextColor="Aqua" Text="{Binding User}"></Entry>
-      <Button Text="Search" TextColor="White" BackgroundColor="Aqua" Command="{Binding Clicked}"></Button>
+      <Entry Placeholder="github user" Text="{Binding User}" IsEnabled="{Binding IsNotBusy}"></Entry>
+      <Button Text="Search" TextColor="Black" BackgroundColor="Aqua" Command="{Binding Clicked}" IsEnabled="{Binding IsNotBusy}"></Button>
+      <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" Color="Aqua" />
       <ListView ItemsSource="{Binding Items}"></ListView>
     </StackLayout>
   </ContentPage.Content>

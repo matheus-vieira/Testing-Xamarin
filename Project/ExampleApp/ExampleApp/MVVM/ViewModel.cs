@@ -10,13 +10,29 @@ namespace ExampleApp
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        public bool IsNotBusy
+        {
+            get { return !_IsBusy; }
+        }
+
+        private bool _IsBusy = false;
+        public bool IsBusy
+        {
+            get { return _IsBusy; }
+            set
+            {
+                _IsBusy = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("IsBusy"));
+                PropertyChanged(this, new PropertyChangedEventArgs("IsNotBusy"));
+            }
+        }
+
+
         private string _user;
         public string User
         {
             get
-            {
-                return _user;
-            }
+            { return _user; }
             set
             {
                 _user = value;
@@ -28,9 +44,7 @@ namespace ExampleApp
         public List<string> Items
         {
             get
-            {
-                return _items;
-            }
+            { return _items; }
             set
             {
                 _items = value;
@@ -42,7 +56,12 @@ namespace ExampleApp
 
         public ViewModel()
         {
-            Clicked = new Command(async o => Items = await GitHubApi.GetAsync(User));
+            Clicked = new Command(async o =>
+            {
+                IsBusy = true;
+                Items = await GitHubApi.GetAsync(User);
+                IsBusy = false;
+            });
         }
     }
 }

@@ -54,7 +54,7 @@ namespace ExampleApp.Database
 
         public List<Contato> Get()
         {
-            return _conn.Table<Contato>().OrderBy(c => c.Nome.ToLower()).ToList();
+            return _conn.Table<Contato>().ToList().OrderBy(c => c.Nome.ToLower()).ToList();
         }
 
         public void Dispose()

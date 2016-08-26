@@ -19,5 +19,10 @@ namespace ExampleApp.PageTypes
         {
             await Navigation.PushAsync(new UICarrosselPage());
         }
+
+        protected async void OnClicked2(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new UIXaml());
+        }
     }
 }

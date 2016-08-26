@@ -13,53 +13,7 @@
     <ui:MyPage />
     <ContentPage BackgroundColor="Blue" Title="Pagina 3" Icon="c.png">
       <ContentPage.Content>
-        <Label Text="Página 3" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-      </ContentPage.Content>
-    </ContentPage>
-    <ContentPage BackgroundColor="Aqua" Title="Pagina 1" Icon="a.png">
-      <ContentPage.Content>
-        <Label Text="Página 1" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-      </ContentPage.Content>
-    </ContentPage>
-    <ContentPage BackgroundColor="Red" Title="Pagina 2" Icon="b.png">
-      <ContentPage.Content>
-        <Label Text="Página 2" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-      </ContentPage.Content>
-    </ContentPage>
-    <ContentPage BackgroundColor="Blue" Title="Pagina 3" Icon="c.png">
-      <ContentPage.Content>
-        <Label Text="Página 3" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-      </ContentPage.Content>
-    </ContentPage>
-    <me:UITabPage4 />
-    <ContentPage BackgroundColor="Aqua" Title="Pagina 1" Icon="a.png">
-      <ContentPage.Content>
-        <Label Text="Página 1" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-      </ContentPage.Content>
-    </ContentPage>
-    <ContentPage BackgroundColor="Red" Title="Pagina 2" Icon="b.png">
-      <ContentPage.Content>
-        <Label Text="Página 2" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-      </ContentPage.Content>
-    </ContentPage>
-    <ContentPage BackgroundColor="Blue" Title="Pagina 3" Icon="c.png">
-      <ContentPage.Content>
-        <Label Text="Página 3" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-      </ContentPage.Content>
-    </ContentPage>
-    <ContentPage BackgroundColor="Aqua" Title="Pagina 1" Icon="a.png">
-      <ContentPage.Content>
-        <Label Text="Página 1" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-      </ContentPage.Content>
-    </ContentPage>
-    <ContentPage BackgroundColor="Red" Title="Pagina 2" Icon="b.png">
-      <ContentPage.Content>
-        <Label Text="Página 2" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-      </ContentPage.Content>
-    </ContentPage>
-    <ContentPage BackgroundColor="Blue" Title="Pagina 3" Icon="c.png">
-      <ContentPage.Content>
-        <Label Text="Página 3" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+        <Button Text="GO MVVM" Clicked="OnClicked2"></Button>
       </ContentPage.Content>
     </ContentPage>
     <me:UITabPage4 />
