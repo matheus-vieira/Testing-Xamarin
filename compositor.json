@@ -1,0 +1,83 @@
+{
+  "name": "matheus-vieira/Testing-Xamarin",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.19"
+  },
+  "title": "A Simple Test with xamarin",
+  "branch": "",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/matheus-vieira/Testing-Xamarin",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "Testing-Xamarin",
+      "subhead": "Several tests with Xamarin.Forms",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "Testing-Xamarin: Several tests with Xamarin.Forms",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "matheus-vieira",
+          "repo": "Testing-Xamarin"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/matheus-vieira/Testing-Xamarin",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/matheus-vieira",
+          "text": "matheus-vieira"
+        }
+      ]
+    }
+  ]
+}
