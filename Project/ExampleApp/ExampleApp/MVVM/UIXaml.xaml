@@ -6,8 +6,21 @@
     <StackLayout Padding="20" Spacing="20">
       <Entry Placeholder="github user" Text="{Binding User}" IsEnabled="{Binding IsNotBusy}"></Entry>
       <Button Text="Search" TextColor="Black" BackgroundColor="Aqua" Command="{Binding Clicked}" IsEnabled="{Binding IsNotBusy}"></Button>
-      <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" Color="Aqua" />
-      <ListView ItemsSource="{Binding Items}"></ListView>
+
+      <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <ListView
+          x:Name="_listView"
+          IsVisible="{Binding IsNotBusy}"
+          ItemsSource="{Binding Items}"
+          VerticalOptions="FillAndExpand"
+          HorizontalOptions="FillAndExpand"></ListView>
+
+        <ActivityIndicator
+          IsVisible="{Binding IsBusy}"
+          IsRunning="{Binding IsBusy}"
+          VerticalOptions="FillAndExpand"
+          HorizontalOptions="FillAndExpand" Color="Aqua" />
+      </Grid>
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>
